@@ -11,6 +11,7 @@
 		5423726C2C3BDCB9009450E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5423726B2C3BDCB9009450E6 /* ContentView.swift */; };
 		5423726E2C3BDCBA009450E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5423726D2C3BDCBA009450E6 /* Assets.xcassets */; };
 		542372712C3BDCBA009450E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542372702C3BDCBA009450E6 /* Preview Assets.xcassets */; };
+		542372802C3BDE54009450E6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5423727F2C3BDE54009450E6 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		5423726B2C3BDCB9009450E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5423726D2C3BDCBA009450E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		542372702C3BDCBA009450E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5423727F2C3BDE54009450E6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,11 @@
 		542372682C3BDCB9009450E6 /* FriendsChat */ = {
 			isa = PBXGroup;
 			children = (
-				542372692C3BDCB9009450E6 /* FriendsChatApp.swift */,
-				5423726B2C3BDCB9009450E6 /* ContentView.swift */,
+				5423727B2C3BDD46009450E6 /* App */,
+				542372772C3BDD35009450E6 /* Extensions */,
+				5423727A2C3BDD41009450E6 /* Core */,
+				542372792C3BDD3D009450E6 /* Model */,
+				542372782C3BDD3B009450E6 /* Service */,
 				5423726D2C3BDCBA009450E6 /* Assets.xcassets */,
 				5423726F2C3BDCBA009450E6 /* Preview Content */,
 			);
@@ -65,6 +70,68 @@
 				542372702C3BDCBA009450E6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		542372772C3BDD35009450E6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		542372782C3BDD3B009450E6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		542372792C3BDD3D009450E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5423727A2C3BDD41009450E6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5423727C2C3BDE10009450E6 /* Authentication */,
+				5423727D2C3BDE1A009450E6 /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5423727B2C3BDD46009450E6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				542372692C3BDCB9009450E6 /* FriendsChatApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5423727C2C3BDE10009450E6 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				5423727E2C3BDE42009450E6 /* View */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		5423727D2C3BDE1A009450E6 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				5423726B2C3BDCB9009450E6 /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		5423727E2C3BDE42009450E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5423727F2C3BDE54009450E6 /* LoginView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				542372802C3BDE54009450E6 /* LoginView.swift in Sources */,
 				5423726C2C3BDCB9009450E6 /* ContentView.swift in Sources */,
 				5423726A2C3BDCB9009450E6 /* FriendsChatApp.swift in Sources */,
 			);
