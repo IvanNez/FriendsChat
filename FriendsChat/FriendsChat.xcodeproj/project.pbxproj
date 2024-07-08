@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54165BF42C3C2721005B8A73 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54165BF32C3C2721005B8A73 /* CircularProfileImageView.swift */; };
 		5423726A2C3BDCB9009450E6 /* FriendsChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542372692C3BDCB9009450E6 /* FriendsChatApp.swift */; };
 		5423726C2C3BDCB9009450E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5423726B2C3BDCB9009450E6 /* ContentView.swift */; };
 		5423726E2C3BDCBA009450E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5423726D2C3BDCBA009450E6 /* Assets.xcassets */; };
@@ -19,9 +20,12 @@
 		5423728D2C3C0637009450E6 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5423728C2C3C0637009450E6 /* NewMessageView.swift */; };
 		542372922C3C0917009450E6 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542372912C3C0917009450E6 /* ProfileView.swift */; };
 		542372942C3C0A22009450E6 /* SettingOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542372932C3C0A22009450E6 /* SettingOptionsViewModel.swift */; };
+		542372962C3C0E3A009450E6 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542372952C3C0E3A009450E6 /* ProfileViewModel.swift */; };
+		542372982C3C1C4F009450E6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542372972C3C1C4F009450E6 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54165BF32C3C2721005B8A73 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		542372662C3BDCB9009450E6 /* FriendsChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendsChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		542372692C3BDCB9009450E6 /* FriendsChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsChatApp.swift; sourceTree = "<group>"; };
 		5423726B2C3BDCB9009450E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +39,8 @@
 		5423728C2C3C0637009450E6 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 		542372912C3C0917009450E6 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		542372932C3C0A22009450E6 /* SettingOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingOptionsViewModel.swift; sourceTree = "<group>"; };
+		542372952C3C0E3A009450E6 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		542372972C3C1C4F009450E6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54165BF22C3C2706005B8A73 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				54165BF32C3C2721005B8A73 /* CircularProfileImageView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		5423725D2C3BDCB9009450E6 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +117,7 @@
 		542372792C3BDD3D009450E6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				542372972C3C1C4F009450E6 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,6 +127,7 @@
 			children = (
 				542372862C3BEF3B009450E6 /* ActiveNow */,
 				5423727C2C3BDE10009450E6 /* Authentication */,
+				54165BF22C3C2706005B8A73 /* Components */,
 				542372832C3BEDAD009450E6 /* Inbox */,
 				5423728B2C3C061E009450E6 /* NewMessage */,
 				5423728E2C3C0900009450E6 /* Profile */,
@@ -191,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				542372932C3C0A22009450E6 /* SettingOptionsViewModel.swift */,
+				542372952C3C0E3A009450E6 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -278,8 +295,11 @@
 				542372802C3BDE54009450E6 /* LoginView.swift in Sources */,
 				5423728D2C3C0637009450E6 /* NewMessageView.swift in Sources */,
 				5423726C2C3BDCB9009450E6 /* ContentView.swift in Sources */,
+				54165BF42C3C2721005B8A73 /* CircularProfileImageView.swift in Sources */,
 				542372852C3BEDB8009450E6 /* InboxView.swift in Sources */,
 				542372942C3C0A22009450E6 /* SettingOptionsViewModel.swift in Sources */,
+				542372962C3C0E3A009450E6 /* ProfileViewModel.swift in Sources */,
+				542372982C3C1C4F009450E6 /* User.swift in Sources */,
 				542372882C3BEF47009450E6 /* ActiveNowView.swift in Sources */,
 				5423726A2C3BDCB9009450E6 /* FriendsChatApp.swift in Sources */,
 				542372822C3BEBB0009450E6 /* RegistrationView.swift in Sources */,
