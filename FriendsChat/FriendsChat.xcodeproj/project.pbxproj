@@ -19,6 +19,7 @@
 		54165C0C2C3D3973005B8A73 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54165C0B2C3D3973005B8A73 /* LoginViewModel.swift */; };
 		54165C0E2C3D398B005B8A73 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54165C0D2C3D398B005B8A73 /* RegistrationViewModel.swift */; };
 		54165C102C3D39A8005B8A73 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54165C0F2C3D39A8005B8A73 /* AuthService.swift */; };
+		54165C142C3D41B9005B8A73 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54165C132C3D41B9005B8A73 /* ContentViewModel.swift */; };
 		5423726A2C3BDCB9009450E6 /* FriendsChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542372692C3BDCB9009450E6 /* FriendsChatApp.swift */; };
 		5423726C2C3BDCB9009450E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5423726B2C3BDCB9009450E6 /* ContentView.swift */; };
 		5423726E2C3BDCBA009450E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5423726D2C3BDCBA009450E6 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		54165C0B2C3D3973005B8A73 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		54165C0D2C3D398B005B8A73 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		54165C0F2C3D39A8005B8A73 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		54165C132C3D41B9005B8A73 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		542372662C3BDCB9009450E6 /* FriendsChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendsChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		542372692C3BDCB9009450E6 /* FriendsChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsChatApp.swift; sourceTree = "<group>"; };
 		5423726B2C3BDCB9009450E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +109,22 @@
 			children = (
 				54165C0B2C3D3973005B8A73 /* LoginViewModel.swift */,
 				54165C0D2C3D398B005B8A73 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		54165C112C3D41A6005B8A73 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5423726B2C3BDCB9009450E6 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54165C122C3D41AB005B8A73 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				54165C132C3D41B9005B8A73 /* ContentViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -208,7 +226,8 @@
 		5423727D2C3BDE1A009450E6 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				5423726B2C3BDCB9009450E6 /* ContentView.swift */,
+				54165C122C3D41AB005B8A73 /* ViewModel */,
+				54165C112C3D41A6005B8A73 /* View */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -357,6 +376,7 @@
 				54165C0E2C3D398B005B8A73 /* RegistrationViewModel.swift in Sources */,
 				542372922C3C0917009450E6 /* ProfileView.swift in Sources */,
 				542372802C3BDE54009450E6 /* LoginView.swift in Sources */,
+				54165C142C3D41B9005B8A73 /* ContentViewModel.swift in Sources */,
 				5423728D2C3C0637009450E6 /* NewMessageView.swift in Sources */,
 				54165BF72C3C2AB2005B8A73 /* ChatView.swift in Sources */,
 				54165C102C3D39A8005B8A73 /* AuthService.swift in Sources */,
