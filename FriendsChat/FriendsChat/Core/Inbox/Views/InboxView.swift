@@ -10,7 +10,13 @@ import SwiftUI
 struct InboxView: View {
     
     @State private var showNewMessageView = false
-    @State private var user = User.MOCK_USER
+    @State private var selectedUser: User?
+    @StateObject var viewModel = InboxViewModel()
+    @State private var showChat = false
+    
+    private var user: User? {
+        return viewModel.currentUser
+    }
     
     var body: some View {
         NavigationStack {
@@ -26,11 +32,19 @@ struct InboxView: View {
                 .frame(height: UIScreen.main.bounds.height - 100)
                 
             }
+            .onChange(of: selectedUser, { oldValue, newValue in
+                showChat = newValue != nil
+            })
             .navigationDestination(for: User.self, destination: { user in
                 ProfileView(user: user)
             })
+            .navigationDestination(isPresented: $showChat, destination: {
+                if let user = selectedUser {
+                    ChatView(user: user)
+                }
+            })
             .fullScreenCover(isPresented: $showNewMessageView) {
-                NewMessageView()
+                NewMessageView(selectedUser: $selectedUser)
             }
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
