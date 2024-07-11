@@ -9,28 +9,31 @@ import SwiftUI
 
 struct ChatMessageCell: View {
     
-    let isFromCurrentUser: Bool
+    let message: Message
+    private var isFromCurrentUser: Bool {
+        return message.isFromCurrentUser
+    }
     
     var body: some View {
         HStack {
-            if isFromCurrentUser {
+            if message.isFromCurrentUser {
                 Spacer()
-                Text("This is a test message for now This is a test message for now This is a test message for now This is a test message for now")
+                Text(message.messageText)
                     .font(.subheadline)
                     .padding()
                     .background(Color(.systemBlue))
                     .foregroundColor(.white)
-                    .clipShape(ChatBubble(isFromCurrentUser: true))
+                    .clipShape(ChatBubble(isFromCurrentUser: isFromCurrentUser))
                     .frame(maxWidth: UIScreen.main.bounds.width / 1.5, alignment: .trailing)
             } else {
                 HStack(alignment: .bottom, spacing: 8) {
                     CircularProfileImageView(user: User.MOCK_USER, size: .xxSmall)
-                    Text("This is a test message for now This is a test message for now This is a test message for now")
+                    Text(message.messageText)
                         .font(.subheadline)
                         .padding(12)
                         .background(Color(.systemGray5))
                         .foregroundColor(.black)
-                        .clipShape(ChatBubble(isFromCurrentUser: false))
+                        .clipShape(ChatBubble(isFromCurrentUser: isFromCurrentUser))
                         .frame(maxWidth: UIScreen.main.bounds.width / 1.75, alignment: .leading)
                     
                     Spacer()
@@ -41,6 +44,6 @@ struct ChatMessageCell: View {
     }
 }
 
-#Preview {
-    ChatMessageCell(isFromCurrentUser: false)
-}
+//#Preview {
+//    ChatMessageCell(isFromCurrentUser: false)
+//}
