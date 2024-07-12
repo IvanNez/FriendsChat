@@ -44,6 +44,8 @@
 		54C04AC62C3EABF400DE56F0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C04AC52C3EABF400DE56F0 /* Constants.swift */; };
 		54C04AC92C3FE6FF00DE56F0 /* InboxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C04AC82C3FE6FF00DE56F0 /* InboxService.swift */; };
 		54C04ACB2C3FF2C400DE56F0 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C04ACA2C3FF2C400DE56F0 /* Date.swift */; };
+		54E44EEB2C412A060026D225 /* ActiveNowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E44EEA2C412A060026D225 /* ActiveNowViewModel.swift */; };
+		54E44EEF2C412CDA0026D225 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E44EEE2C412CDA0026D225 /* Route.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +83,8 @@
 		54C04AC52C3EABF400DE56F0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		54C04AC82C3FE6FF00DE56F0 /* InboxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxService.swift; sourceTree = "<group>"; };
 		54C04ACA2C3FF2C400DE56F0 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		54E44EEA2C412A060026D225 /* ActiveNowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowViewModel.swift; sourceTree = "<group>"; };
+		54E44EEE2C412CDA0026D225 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +205,7 @@
 		542372682C3BDCB9009450E6 /* FriendsChat */ = {
 			isa = PBXGroup;
 			children = (
+				54E44EEC2C412CC50026D225 /* Rooting */,
 				5423727B2C3BDD46009450E6 /* App */,
 				542372772C3BDD35009450E6 /* Extensions */,
 				5423727A2C3BDD41009450E6 /* Core */,
@@ -312,7 +317,8 @@
 		542372862C3BEF3B009450E6 /* ActiveNow */ = {
 			isa = PBXGroup;
 			children = (
-				542372872C3BEF47009450E6 /* ActiveNowView.swift */,
+				54E44EE92C4129E00026D225 /* ViewModel */,
+				54E44EE82C4129D20026D225 /* View */,
 			);
 			path = ActiveNow;
 			sourceTree = "<group>";
@@ -392,6 +398,30 @@
 				54C04AC82C3FE6FF00DE56F0 /* InboxService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		54E44EE82C4129D20026D225 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				542372872C3BEF47009450E6 /* ActiveNowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54E44EE92C4129E00026D225 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				54E44EEA2C412A060026D225 /* ActiveNowViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		54E44EEC2C412CC50026D225 /* Rooting */ = {
+			isa = PBXGroup;
+			children = (
+				54E44EEE2C412CDA0026D225 /* Route.swift */,
+			);
+			path = Rooting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -483,6 +513,7 @@
 				542372802C3BDE54009450E6 /* LoginView.swift in Sources */,
 				54165C142C3D41B9005B8A73 /* ContentViewModel.swift in Sources */,
 				5423728D2C3C0637009450E6 /* NewMessageView.swift in Sources */,
+				54E44EEF2C412CDA0026D225 /* Route.swift in Sources */,
 				54165BF72C3C2AB2005B8A73 /* ChatView.swift in Sources */,
 				54165C102C3D39A8005B8A73 /* AuthService.swift in Sources */,
 				5423726C2C3BDCB9009450E6 /* ContentView.swift in Sources */,
@@ -494,6 +525,7 @@
 				54C04AC32C3EAB1E00DE56F0 /* ChatService.swift in Sources */,
 				542372852C3BEDB8009450E6 /* InboxView.swift in Sources */,
 				54165C0C2C3D3973005B8A73 /* LoginViewModel.swift in Sources */,
+				54E44EEB2C412A060026D225 /* ActiveNowViewModel.swift in Sources */,
 				54165C1E2C3D6C5C005B8A73 /* NewMessageViewModel.swift in Sources */,
 				54165C162C3D4B98005B8A73 /* UserService.swift in Sources */,
 				542372942C3C0A22009450E6 /* SettingOptionsViewModel.swift in Sources */,
